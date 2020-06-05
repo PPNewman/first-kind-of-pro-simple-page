@@ -1,0 +1,16 @@
+header h1 {
+  font-size: 50px;
+}
+
+header .hero-text p {
+  font-size: 30px;
+}
+
+#prices .price-info {
+  font-size: 23px;
+}
+
+#team .jumbotron .card-body {
+  height: 220px;
+}
+/*# sourceMappingURL=medium.css.map */

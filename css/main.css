@@ -1,0 +1,469 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  background-color: #333;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.blue-text {
+  color: #439dff;
+}
+
+.wrapper {
+  max-width: 2560px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.underline {
+  width: 60px;
+  height: 4px;
+  margin: 0 auto 40px;
+  background-color: #439dff;
+}
+
+.scroll-fix::before {
+  display: block;
+  margin-top: -66px;
+  height: 66px;
+  content: '';
+}
+
+.visibility {
+  visibility: hidden;
+}
+
+.jumbotron {
+  margin: 0;
+}
+
+.row {
+  margin: 0;
+}
+
+nav {
+  text-transform: uppercase;
+  -webkit-transition: background-color .6s;
+  transition: background-color .6s;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+nav a, nav i {
+  color: #fff;
+  -webkit-transition: color .3s;
+  transition: color .3s;
+}
+
+nav a:hover {
+  color: #439dff;
+}
+
+nav i {
+  padding: 10px;
+}
+
+nav .navbar-brand {
+  font-weight: bold;
+}
+
+nav .active {
+  color: #439dff;
+}
+
+header {
+  overflow: hidden;
+  color: #fff;
+}
+
+header h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+header .hero-img {
+  position: relative;
+  height: 100vh;
+  background-image: url("../img/hero-img-small.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 0;
+}
+
+header .hero-shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+}
+
+header .hero-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  text-align: center;
+}
+
+header .hero-text p {
+  font-size: 15px;
+}
+
+header .btn-outline-light {
+  text-transform: uppercase;
+  word-spacing: 5px;
+}
+
+header .fa-angle-double-down {
+  display: none;
+}
+
+#about-us .about-us-hover {
+  -webkit-transition: color .3s;
+  transition: color .3s;
+}
+
+#about-us .about-us-hover:hover {
+  color: #439dff;
+}
+
+#about-us-hero {
+  overflow: hidden;
+  color: #e9ecef;
+}
+
+#about-us-hero .jumbotron {
+  position: relative;
+  background-image: url("../img/jumbotron-img.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 0;
+}
+
+#about-us-hero .jumbotron-shadow {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: -1;
+}
+
+#about-us .jumbotron, #about-us-hero .jumbotron {
+  padding: 60px 0;
+}
+
+#about-us i, #about-us-hero i {
+  margin-top: 20px;
+  padding: 0 20px;
+  font-size: 30px;
+}
+
+#about-us h3, #about-us-hero h3 {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#about-us p, #about-us-hero p {
+  font-size: 15px;
+}
+
+#about-us .about-hero-item, #about-us-hero .about-hero-item {
+  margin: 10px 0;
+}
+
+#portfolio .carousel-item {
+  position: relative;
+  height: 600px;
+}
+
+#portfolio .carousel-item img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#portfolio .carousel-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 30px 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+#portfolio .carousel-indicators {
+  padding-bottom: 10px;
+}
+
+#prices .jumbotron {
+  background-color: #f9f9f9;
+}
+
+#prices .price-wrapper {
+  max-width: 2560px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+#prices .price-box {
+  margin: 20px 10px;
+  padding: 30px;
+  background-color: #fff;
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+#prices .price-box h3 {
+  color: #439dff;
+  text-transform: uppercase;
+}
+
+#prices .price-box span {
+  font-weight: bold;
+}
+
+#prices .price-box i {
+  padding: 0 5px;
+  font-size: 23px;
+}
+
+#prices .price-box button {
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+
+#prices .price-box .price {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#prices .price-box:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+#prices .price-text {
+  margin-top: 30px;
+}
+
+#team .jumbotron {
+  position: relative;
+  background-image: url("../img/team/team-bg.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  z-index: 0;
+}
+
+#team .jumbotron h2 {
+  color: #fff;
+}
+
+#team .jumbotron .team-shadow {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: -1;
+}
+
+#team .jumbotron .card {
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+#team .jumbotron .card img {
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#team .jumbotron .card i {
+  padding: 10px 20px;
+}
+
+#team .jumbotron .card .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#team .jumbotron .card:hover {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+#team .jumbotron .card-body {
+  height: 220px;
+}
+
+#team .jumbotron .card-title {
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+}
+
+#team .jumbotron .card-text {
+  font-size: 14px;
+}
+
+#achievements .achievement-list {
+  padding: 20px 0;
+}
+
+#achievements .achievement {
+  text-align: center;
+}
+
+#achievements i {
+  font-size: 48px;
+  padding: 10px;
+  color: #ffffff;
+  text-shadow: 0 0 5px black;
+}
+
+#achievements .achievement-number {
+  font-size: 25px;
+}
+
+#achievements .achievement-text {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+#contact .jumbotron {
+  position: relative;
+  background-image: url("../img/contact-city.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  z-index: 0;
+}
+
+#contact .jumbotron h2 {
+  font-weight: bold;
+  color: #fff;
+}
+
+#contact .jumbotron .underline {
+  background-color: #fff;
+}
+
+#contact .contact-shadow {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(27, 36, 56, 0.8);
+  z-index: -1;
+}
+
+#contact .contact-us {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+}
+
+#contact .contact-us .contact-item {
+  margin: 30px 0;
+}
+
+#contact .contact-us .contact-item h3 {
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+}
+
+#contact .contact-us .contact-item .social-media {
+  font-size: 26px;
+}
+
+#contact .contact-us .contact-item .social-media a {
+  padding: 10px;
+  color: #fff;
+}
+
+#contact .contact-us .contact-item .social-media a:hover {
+  color: #439dff;
+}
+
+footer {
+  color: #fff;
+}
+
+footer p {
+  padding: 20px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+@media (min-width: 375px) {
+  header h1 {
+    font-size: 40px;
+  }
+  header .hero-text p {
+    font-size: 20px;
+  }
+  #about-us .jumbotron h2, #about-us-hero .jumbotron h2 {
+    font-size: 33px;
+  }
+  #about-us .jumbotron h3, #about-us-hero .jumbotron h3 {
+    font-size: 24px;
+  }
+  #about-us .jumbotron p, #about-us-hero .jumbotron p {
+    font-size: 17px;
+  }
+  #about-us .jumbotron i, #about-us-hero .jumbotron i {
+    font-size: 33px;
+  }
+  #team .card-text {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 400px) {
+  #team .jumbotron .card-body {
+    height: 160px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
